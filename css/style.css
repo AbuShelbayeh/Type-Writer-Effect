@@ -15,7 +15,7 @@ body {
   background: url("../img/darkness.png");
   word-wrap: break-word;
   overflow: wrap;
-  animation: body-bg 500ms infinite;
+  animation: body-bg 1.5s infinite cubic-bezier(0.47, 0, 0.74, 0.71);
 }
 
 
@@ -27,12 +27,18 @@ body {
   color: #00ff4a;
   word-wrap: break-word;
   overflow: wrap;
+  /* background-color: rgba(13, 43, 0, 0.329); */
+}
+
+.container p {
+  text-shadow: #00ff4a 0px 0 40px;
 }
 
 /* MyName */
 
 #myName {
   display: inline-block;
+  text-shadow: #00ff4a 0px 0 40px;
 }
 
 /* Blinker */
@@ -46,6 +52,7 @@ body {
   left: -0.2em;
   top: 0.1em;
   animation: blink 1s infinite cubic-bezier(0.47, 0, 0.74, 0.71);
+  box-shadow: 0px 0px 10px 1px #00ff4a;
 }
 
 @keyframes blink {
